@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
     <title>Take</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
@@ -11,92 +11,102 @@
 <body>
     <div class="container-fluid section-1">
         <div class="row">
-            <div class="col-lg-5 section-1-left">
+            <div class="col-lg-5 section-1-box">
                 <div class="logo">
-                    <img src="images/logo.svg" />
+                    <a href="#"><img src="images/logo.svg" alt="logo" title="take" /></a>
                 </div>
-                <h1>Picture perfect</h1>
-                <p>
+                <h1 class="section-1-title">Picture perfect</h1>
+                <p class="section-1-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
             <div class="col-lg-7 hidden-md-down">
-                <img src="images/iPhone.png" class="iphone" />
+                <img src="images/iPhone.png" class="iphone" alt="iphone" />
             </div>
         </div>
     </div>
 
     <div class="container-fluid section-2">
         <div class="row">
-            <div class="col-lg-6 section-2-left slideanim-1">
-                <h1>Start something new</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            <div class="col-lg-6 section-2-left anim-slideInUp">
+                <h2 class="h2-title section-2-title">Start something new</h2>
+                <p class="section-2-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="section-2-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-                 natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                 explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
-                quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                    natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+                <p class="section-2-text">
+                    Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                    quia consequuntur magni dolores eos qui ratione voluptatem.
+                </p>
             </div>
-            <div class="col-lg-6 section-2-right slideanim-2">
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci 
-                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <div class="col-lg-6 section-2-right anim-slideInRight">
+                <p class="section-2-text">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                </p>
+                <p class="section-2-text">
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
             </div>
         </div>
     </div>
 
     <div class="container-fluid section-3 hidden-md-down">
         <div class="row section-3-row">
-            <div class="col-lg-3 pink section-3-img">
-                <h2>Design quality</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Find Out more →</a>
+            <div class="col-lg-3 pink section-3-box">
+                <h2 class="section-3-title">Design quality</h2>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Find Out more →</a>
             </div>
-            <div class="col-lg-3 purple section-3-img">
-                <h2>Built to last</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Find Out more →</a>
+            <div class="col-lg-3 purple section-3-box">
+                <h3 class="section-3-title">Built to last</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Find Out more →</a>
             </div>
-            <div class="col-lg-3 section-3-img-3 section-3-img">
-                <h2>Our clients</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Get inisights →</a>
+            <div class="col-lg-3 section-3-img-3 section-3-box">
+                <h3 class="section-3-title">Our clients</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Get inisights →</a>
                 <div class="heart">
-                    <a href=""><img src="images/fa-heart.png"></a>
+                    <a href="#"><img src="images/fa-heart.png"></a>
                 </div>
             </div>
-            <div class="col-lg-3 light-purple section-3-img">
-                <h2>How to show great</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Find Out more →</a>
+            <div class="col-lg-3 light-purple section-3-box">
+                <h3 class="section-3-title">How to show great</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Find Out more →</a>
             </div>
         </div>
     </div>
     <div class="container-fluid section-3 hidden-md-down">
         <div class="row section-3-row">
-            <div class="col-lg-4 section-3-img-5 section-3-img">
-                <h2>Sign up & see why</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br/> tempor incididunt ut adipisicing.</p>
-                <a href="#">Get Started Now →</a>
+            <div class="col-lg-4 section-3-img-5 section-3-box">
+                <h3 class="section-3-title">Sign up & see why</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br /> tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Get Started Now →</a>
                 <div class="heart">
                     <a href=""><img src="images/fa-heart.png"></a>
                 </div>
             </div>
-            <div class="col-lg-4 green section-3-img">
-                <h2>Perfect pictures</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Find Out more →</a>
+            <div class="col-lg-4 green section-3-box">
+                <h3 class="section-3-title">Perfect pictures</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Find Out more →</a>
             </div>
-            <div class="col-lg-4 section-3-img-3 section-3-img">
-                <h2>Start something new</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
-                <a href="#">Get Started Now →</a>
+            <div class="col-lg-4 section-3-img-3 section-3-box">
+                <h3 class="section-3-title">Start something new</h3>
+                <p class="section-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</p>
+                <a href="#" class="section-3-link">Get Started Now →</a>
                 <div class="heart">
                     <a href=""><img src="images/fa-heart.png"></a>
                 </div>
@@ -107,38 +117,37 @@
     <div class="container-fluid section-4">
         <div class="row">
             <div class="col-lg-12">
-                <h1>A look at the details</h1>
+                <h2 class="section-4-title h2-title">A look at the details</h2>
             </div>
         </div>
-    
         <div class="row">
-            <div class="col-lg-3 col-sm-6 section-4-text slideanim-3">
-                <h6>Web based</h6>
-                <p>
+            <div class="col-lg-3 col-sm-6 section-4-box anim-rollIn">
+                <h3 class="title-bold">Web based</h3>
+                <p class="section-4-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-6 section-4-text slideanim-3">
-                <h6>Performance</h6>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="col-lg-3 col-sm-6 section-4-text slideanim-3">
-                <h6>Clultral</h6>
-                <p>
+            <div class="col-lg-3 col-sm-6 section-4-box anim-rollIn">
+                <h3 class="title-bold">Performance</h3>
+                <p class="section-4-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="col-lg-3 col-sm-6 section-4-text slideanim-3">
-                <h6>Sustainability</h6>
-                <p>
+            <div class="col-lg-3 col-sm-6 section-4-box anim-rollIn">
+                <h3 class="title-bold">Clultral</h3>
+                <p class="section-4-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 section-4-box anim-rollIn">
+                <h3 class="title-bold">Sustainability</h3>
+                <p class="section-4-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -149,43 +158,44 @@
 
     <div class="container-fluid section-5">
         <div class="row">
-            <div class="col-lg-6 section-5-left slideanim-9">
-                <h1>More power behind every pixel.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            <div class="col-lg-12 section-5-box anim-rotateX">
+                <h2 class="section-5-title">More power behind every pixel.</h2>
+                <p class="section-5-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#">See the options →</a>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="section-5-link">See the options →</a>
             </div>
-            <div class="col-lg-6"></div>
         </div>
     </div>
 
     <div class="container-fluid section-6">
         <div class="row">
             <div class="col-lg-12">
-                <h1>Reasons to get onboard</h1>
+                <h2 class="section-6-title h2-title">Reasons to get onboard</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 slideanim-7">
-                <h6>Web based</h6>
-                <p>
+            <div class="col-md-4 section-6-box anim-rollFade">
+                <h3 class="title-bold">Web based</h3>
+                <p class="section-6-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="col-md-4 slideanim-7">
-                <h6>Open Source</h6>
-                <p>
+            <div class="col-md-4 section-6-box anim-rollFade">
+                <h3 class="title-bold">Open Source</h3>
+                <p class="section-6-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="col-md-4 slideanim-7">
-                <h6>Great Support</h6>
-                <p>
+            <div class="col-md-4 section-6-box anim-rollFade">
+                <h3 class="title-bold">Great Support</h3>
+                <p class="section-6-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -196,30 +206,30 @@
 
     <div class="container-fluid section-7">
         <div class="row">
-            <div class="col-lg-6 section-7-left slideanim-8">
-                <p class="section-7-badge section-7-left-badge"><b>LEGACY</b></p>
-                <h1>Go it Solo</h1>
-                <p>
+            <div class="col-lg-6 section-7-left anim-rotateY">
+                <div class="section-7-badge section-7-left-badge">Legacy</div>
+                <h3 class="section-7-title">Go it solo</h3>
+                <p class="section-7-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco
                 </p>
-                <button type="button" class="btn btn-success"><b>BUY NOW $9</b></button>
+                <a href="#" class="btn-buy">Buy now $9</a>
                 <div class="section-7-icon">
                     <img src="images/fa-apple.svg" alt="apple" />
                     <img src="images/fa-windows.svg" alt="windows" />
                 </div>
             </div>
-       
-            <div class="col-lg-6 section-7-right slideanim-8">
-                <p class="section-7-badge section-7-right-badge"><b>MOST POPULAR</b></p>
-                <h1>Team Plan</h1>
-                <p>
+
+            <div class="col-lg-6 section-7-right anim-rotateY">
+                <div class="section-7-badge section-7-right-badge">Most popular</div>
+                <h3 class="section-7-title">Team Plan</h3>
+                <p class="section-7-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris
                 </p>
-                <button type="button" class="btn btn-success"><b>BUY NOW $18</b></button>
+                <a href="#" class="btn-buy">Buy now $18</a>
                 <div class="section-7-icon">
                     <img src="images/fa-apple.svg" alt="apple" />
                     <img src="images/fa-windows.svg" alt="windows" />
@@ -230,60 +240,58 @@
 
     <div class="container-fluid section-8">
         <div class="row">
-            <div class="col-lg-6 section-8-left slideanim-10">
-                <p><b>Get in touch</b></p>
-                <p>
+            <div class="col-lg-6 section-8-left anim-zoomIn">
+                <h4 class="title-bold">Get in touch</h4>
+                <p class="section-8-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-
-                    <div class="row section-8-left-list">
-                        <div class="col-lg-4 col-sm-4 col-xs-6">
-                            <p><b>Resources</b></p>
-                            <ul>
-                                <li>Tour</li>
-                                <li>Customers</li>
-                                <li>Pricing and Plans</li>
-                                <li>New Features</li>
-                                <li>Education</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-6">
-                            <p><b>Features</b></p>
-                            <ul>
-                                <li>Tour</li>
-                                <li>Customers</li>
-                                <li>Pricing and Plans</li>
-                                <li>New Features</li>
-                                <li>Education</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-6">
-                            <p><b>How To's</b></p>
-                            <ul>
-                                <li>Tour</li>
-                                <li>Customers</li>
-                                <li>Pricing and Plans</li>
-                                <li>New Features</li>
-                                <li>Education</li>
-                            </ul>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 col-xs-6">
+                        <h4 class="title-bold footer-title">Resources</h4>
+                        <ul class="section-8-left-list">
+                            <li><a href="#" class="footer-link">Tour</a></li>
+                            <li><a href="#" class="footer-link">Customers</a></li>
+                            <li><a href="#" class="footer-link">Pricing and Plans</a></li>
+                            <li><a href="#" class="footer-link">New Features</a></li>
+                            <li><a href="#" class="footer-link">Education</a></li>
+                        </ul>
                     </div>
- 
+                    <div class="col-lg-4 col-sm-4 col-xs-6">
+                        <h4 class="title-bold footer-title">Features</h4>
+                        <ul class="section-8-left-list">
+                            <li><a href="#" class="footer-link">Tour</a></li>
+                            <li><a href="#" class="footer-link">Customers</a></li>
+                            <li><a href="#" class="footer-link">Pricing and Plans</a></li>
+                            <li><a href="#" class="footer-link">New Features</a></li>
+                            <li><a href="#" class="footer-link">Education</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6">
+                        <h4 class="title-bold footer-title">How To's</h4>
+                        <ul class="section-8-left-list">
+                            <li><a href="#" class="footer-link">Tour</a></li>
+                            <li><a href="#" class="footer-link">Customers</a></li>
+                            <li><a href="#" class="footer-link">Pricing and Plans</a></li>
+                            <li><a href="#" class="footer-link">New Features</a></li>
+                            <li><a href="#" class="footer-link">Education</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5 section-8-right slideanim-11">
-                <p><b>Stay in touch</b></p>
+            <div class="col-lg-6 section-8-right anim-bounceInDown">
+                <h4 class="title-bold title-padding">Stay in touch</h4>
                 <form role="form">
-                    <div class="form-group section-8-right-form">
-                        <input type="email" class="form-control input-lg section-8-right-input" id="email" placeholder="Enter your email">
+                    <div class="form-group section-8-form">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" class="form-control input-lg section-8-form-input" placeholder="Enter your email">
                     </div>
-                    <button type="submit" class="section-8-right-button">
-                        <img src="images/tick.svg" />
+                    <button type="submit" class="section-8-submit-button">
+                        <img src="images/tick.svg" alt="tick" />
                     </button>
                 </form>
-                <p id="section-8-right-text">We don’t send spam. Actually, who are we kiding, we’ll spam the shit out of your inbox</p>
+                <p class="section-8-form-note">We don’t send spam. Actually, who are we kiding, we’ll spam the shit out of your inbox</p>
             </div>
         </div>
     </div>
