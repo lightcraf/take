@@ -1,49 +1,76 @@
-﻿$(window).scroll(function () {
-    var winTop = $(window).scrollTop();
-
-    var pos1 = $(".slideanim-1").offset().top;
-    if (pos1 < winTop + 600) {
-        $(".slideanim-1").addClass("slide-1");
-    }
-
-    var pos2 = $(".slideanim-2").offset().top;
-    if (pos2 < winTop + 600) {
-        $(".slideanim-2").addClass("slide-2");
-    }
-
-    $(".slideanim-3").each(function () {
-        var pos = $(this).offset().top;
-        if (pos < winTop + 600) {
-            $(this).addClass("slide-3");
-        }
-    });
-
-    $(".slideanim-7").each(function () {
-        var pos = $(this).offset().top;
-        if (pos < winTop + 600) {
-            $(this).addClass("slide-7");
-        }
-    });
-
-    $(".slideanim-8").each(function () {
-        var pos = $(this).offset().top;
-        if (pos < winTop + 600) {
-            $(this).addClass("slide-8");
-        }
-    });
-
-    var pos9 = $(".slideanim-9").offset().top;
-    if (pos9 < winTop + 200) {
-        $(".slideanim-9").addClass("slide-9");
-    }
-
-    var pos10 = $(".slideanim-10").offset().top;
-    if (pos10 < winTop + 900) {
-        $(".slideanim-10").addClass("slide-10");
-    }
-
-    var pos11 = $(".slideanim-11").offset().top;
-    if (pos11 < winTop + 900) {
-        $(".slideanim-11").addClass("slide-11");
-    }
+﻿$(document).ready(function () {
+    $(window).on("scroll", throttle(animatePage, 100));
 });
+
+function throttle(fn, threshhold, scope) {
+    threshhold || (threshhold = 250);
+    var last,
+        deferTimer;
+    return function () {
+        var context = scope || this;
+
+        var now = +new Date,
+            args = arguments;
+        if (last && now < last + threshhold) {
+            // hold on to it
+            clearTimeout(deferTimer);
+            deferTimer = setTimeout(function () {
+                last = now;
+                fn.apply(context, args);
+            }, threshhold);
+        } else {
+            last = now;
+            fn.apply(context, args);
+        }
+    };
+}
+
+function animatePage() {
+    var verticalPosition = $(window).scrollTop();
+
+    var pos1 = $(".anim-slideInUp").offset().top;
+    if (pos1 < verticalPosition + 600) {
+        $(".anim-slideInUp").addClass("slideInUp");
+    }
+
+    var pos2 = $(".anim-slideInRight").offset().top;
+    if (pos2 < verticalPosition + 600) {
+        $(".anim-slideInRight").addClass("slideInRight");
+    }
+
+    $(".anim-rollIn").each(function () {
+        var pos = $(this).offset().top;
+        if (pos < verticalPosition + 600) {
+            $(this).addClass("rollIn");
+        }
+    });
+
+    $(".anim-rollFade").each(function () {
+        var pos = $(this).offset().top;
+        if (pos < verticalPosition + 600) {
+            $(this).addClass("rollFade");
+        }
+    });
+
+    $(".anim-rotateY").each(function () {
+        var pos = $(this).offset().top;
+        if (pos < verticalPosition + 600) {
+            $(this).addClass("rotateY");
+        }
+    });
+
+    var pos3 = $(".anim-rotateX").offset().top;
+    if (pos3 < verticalPosition + 200) {
+        $(".anim-rotateX").addClass("rotateX");
+    }
+
+    var pos4 = $(".anim-zoomIn").offset().top;
+    if (pos4 < verticalPosition + 900) {
+        $(".anim-zoomIn").addClass("zoomIn");
+    }
+
+    var pos5 = $(".anim-bounceInDown").offset().top;
+    if (pos5 < verticalPosition + 800) {
+        $(".anim-bounceInDown").addClass("bounceInDown");
+    }
+}
