@@ -6,6 +6,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.h2-title {
+    font-size: 35px;
+}
+
+.title-bold {
+    font-size: 13px;
+    font-weight: bold;
+}
+
 .section-1 {
     background-attachment: fixed;
     background-position: center center;
@@ -15,7 +28,7 @@ body {
     min-height: 951px;
 }
 
-.section-1-left {
+.section-1-box {
     color: white;
     padding-left: 30px;
 }
@@ -24,12 +37,12 @@ body {
     padding-top: 55px;
 }
 
-.section-1-left h1 {
+.section-1-title {
     font-size: 60px;
     padding: 342px 0px 12px 0px;
 }
 
-.section-1-left p {
+.section-1-text {
     font-size: 13px;
     line-height: 185%;
 }
@@ -47,16 +60,15 @@ body {
     padding: 106px 30px 0px 30px;
 }
 
-.section-2-left h1{
-    font-size: 35px;
+.section-2-title {
     padding-bottom: 20px;
 }
 
-.section-2-left p, .section-2-right p {
+.section-2-text {
     font-size: 14px;
     line-height: 170%;
     color: #959595;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
 }
 
 .section-2-right {
@@ -69,21 +81,23 @@ body {
     padding-left: 45px;
 }
 
+.section-3-title {
+    font-size: 30px;
+}
+
 .section-3-row {
     width: 1630px;
 }
 
-.section-3-img {
+.section-3-box {
     min-height: 278px;
     max-width: 400px;
-    padding: 44px 40px 40px 40px;
+    padding: 44px 40px 40px 45px;
 }
 
-.section-3-img h2 {
-    letter-spacing: -1px;
-}
-
-.section-3-img a {
+.section-3-link {
+    position: absolute;
+    bottom: 55px;
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -91,10 +105,11 @@ body {
     text-decoration: none;
 }
 
-.section-3-img p {
-    font-size: 14px;
-    line-height: 170%;
-    padding: 12px 0px;
+.section-3-text {
+    font-size: 13px;
+    line-height: 185%;
+    padding: 14px 0px;
+    letter-spacing: 0.3px;
 }
 
 .pink {
@@ -128,10 +143,6 @@ body {
     min-width: 800px;
 }
 
-.section-3-img-5 p {
-    padding-bottom: 36px;
-}
-
 .heart {
     position: absolute;
     bottom: 43px;
@@ -139,26 +150,20 @@ body {
 }
 
 .section-4 {
-    min-height: 525px;
-    padding: 90px 30px 100px 30px;
+    min-height: 526px;
+    padding: 90px 64px 100px 30px;
 }
 
-.section-4 h1 {
-    font-size: 35px;
-    padding-bottom: 46px;
-}
-
-.section-4-text {
+.section-4-box {
     color: gray;
     padding-top: 7px;
 }
 
-.section-4-text h6 {
-    font-size: 13px;
-    font-weight: bold;
+.section-4-title {
+    padding-bottom: 47px;
 }
 
-.section-4-text p {
+.section-4-text {
     font-size: 14px;
     padding-top: 14px;
     line-height: 170%;
@@ -173,53 +178,47 @@ body {
     background-size: cover;
 }
 
-.section-5-left {
-    color: white;
-    padding: 439px 70px 0px 30px;
-}
-
-.section-5-left h1 {
-    line-height: 118%;
+.section-5-title {
     font-size: 60px;
 }
 
-.section-5-left p {
-    width: 90%;
-    padding-top: 19px;
-    font-size: 14px;
-    line-height: 170%;
-    margin-bottom: 14px;
+.section-5-box {
+    max-width: 540px;
+    color: white;
+    padding: 440px 0px 0px 30px;
 }
 
-.section-5-left a {
+.section-5-text {
+    width: 90%;
+    font-size: 14px;
+    line-height: 170%;
+    margin: 36px 0px 14px 0px;
+}
+
+.section-5-link {
     font-size: 14px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 0.4px;
 }
 
 .section-6 {
     background-color: #82ca9c;
     color: white;
-    padding: 118px 30px 80px 30px;
+    padding: 118px 60px 0px 30px;
     line-height: 170%;
     min-height: 536px;
 }
 
-.section-6 h1 {
-    font-size: 36px;
-    letter-spacing: -0.6px;
+.section-6-title {
+    padding-bottom: 54px;
 }
 
-.section-6 h6 {
-    padding: 53px 0px 12px 0px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.section-6 p {
+.section-6-text {
     font-size: 14px;
     line-height: 170%;
+    padding: 13px 12px 0px 0px;
 }
 
 .section-7 {
@@ -230,30 +229,28 @@ body {
 
 .section-7-right {
     background-color: white;
-    padding: 47px 6% 56px 51px;
-    -webkit-box-shadow: 0px 0px 20px #e9eaed;
+    padding: 47px 9% 56px 51px;
     box-shadow: 0px 0px 20px #e9eaed;
 }
 
 .section-7-left {
-    padding: 47px 6% 56px 51px;
+    padding: 47px 10% 56px 75px;
 }
 
-.section-7-left h1, .section-7-right h1 {
-    font-size: 32px;
-    padding-top: 1px;
-    letter-spacing: -1.2px;
+.section-7-title {
+    font-size: 30px;
 }
 
 .section-7-badge {
     font-size: 11px;
     color: white;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
     height: 24px;
     text-align: center;
     line-height: 24px;
-    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 17px;
 }
 
 .section-7-right-badge {
@@ -266,18 +263,27 @@ body {
     width: 77px;
 }
 
-.section-7-left p:nth-child(3),  .section-7-right p:nth-child(3) {
+.section-7-text {
     color: gray;
     line-height: 170%;
     font-size: 14px;
-    padding: 7px 0px 8px 0px;
+    padding: 10px 0px 8px 0px;
+    letter-spacing: 0.3px;
 }
 
-.section-7 button {
+.btn-buy {
+    display: block;
     height: 46px;
     width: 150px;
+    background-color: #82ca9c;
     font-size: 14px;
     letter-spacing: 1.1px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 46px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
 .section-7-icon {
@@ -292,71 +298,89 @@ body {
     background-color: #192431;
     min-height: 608px;
     color: white;
-    padding: 124px 30px 100px 30px;
+    padding: 128px 30px 100px 30px;
 }
 
-.section-8-left p:nth-child(1) {
-    line-height: 175%;
-    font-size: 13px;
+.section-8-left {
+    padding-right: 30px;
 }
 
-.section-8-left p:nth-child(2) {
+.footer-title {
+    padding-top: 50px;
+}
+
+.footer-link {
+    color: white;
+}
+
+.section-8-text {
     font-size: 13px;
-    line-height: 175%;
-    padding-top: 3px;
+    line-height: 185%;
+    padding-top: 13px;
 }
 
 .section-8-left-list {
     font-size: 13px;
     padding-top: 50px;
-}
-
-.section-8-left-list h5 {
-    padding-bottom: 10px;
-}
-
-.section-8-left-list ul {
-    padding: 0px;
+    padding: 12px 0px 0px 0px;
     list-style: none;
     line-height: 185%;
 }
 
-.section-8-right p {
-    font-size: 13px;
-    padding: 2px 0px 8px 0px;
+.section-8-right {
+    padding-left: 96px;
 }
 
-.section-8-right-button {
-    background-color: #82ca9c;
-    height: 58px;
-    border: none;
-    width: 70px;
-    -webkit-border-radius: 0px 2px 2px 0px;
-    border-radius: 0px 2px 2px 0px;
-    margin: 1px 0px 0px -1px;
+.title-padding {
+    padding-bottom: 11px;
 }
 
-.section-8-right-input {
-    -webkit-border-radius: 2px 0px 0px 2px !important;
+.section-8-form {
+    padding-right: 103px;
+}
+
+.section-8-form-input {
     border-radius: 2px 0px 0px 2px !important;
     float: left;
     height: 60px;
 }
 
-.section-8-right-form {
-    padding-right: 110px;
+.section-8-submit-button {
+    background-color: #82ca9c;
+    height: 58px;
+    border: none;
+    width: 70px;
+    border-radius: 0px 2px 2px 0px;
+    margin: 1px 0px 0px -1px;
 }
 
-#section-8-right-text {
+.section-8-submit-button:hover {
+    cursor: pointer;
+}
+
+.section-8-form-note {
     color: #57697f;
     font-size: 12px;
-    width: 65%;
-    padding-top: 14px;
+    width: 68%;
+    padding-top: 13px;
+    letter-spacing: 0.3px;
 }
 
 @media only screen and (max-width: 992px) {
     .section-2-right {
         padding-top: 0px;
+    }
+
+    .section-8-right {
+        padding-left: 15px;
+    }
+
+    .section-8-form {
+        padding-right: 70px;
+    }
+
+    .section-7-left {
+        padding: 47px 9% 56px 51px;
     }
 }
 
@@ -368,11 +392,14 @@ body {
 
 .section-3-img-5, .section-3-img-3 {
     -webkit-transition-property: background-size;
+    -o-transition-property: background-size;
     transition-property: background-size;
     -webkit-transition-duration: 1s;
-    transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
     -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
 
 .section-3-img-5:hover, .section-3-img-3:hover {
@@ -380,66 +407,66 @@ body {
 }
 
 .iphone {
-    -webkit-animation-name: iphone;
-    animation-name: iphone;
+    -webkit-animation-name: zoom;
+            animation-name: zoom;
     -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
+            animation-duration: 1.2s;
 }
 
-@-webkit-keyframes iphone {
+@-webkit-keyframes zoom {
     0% {
         opacity: 0;
         -webkit-transform: scale(0);
-        transform: scale(0);
+                transform: scale(0);
     }
     100% {
         opacity: 1;
        -webkit-transform: scale(1);
-       transform: scale(1);
+               transform: scale(1);
     }
 }
 
-@keyframes iphone {
+@keyframes zoom {
     0% {
         opacity: 0;
         -webkit-transform: scale(0);
-        transform: scale(0);
+                transform: scale(0);
     }
     100% {
         opacity: 1;
        -webkit-transform: scale(1);
-       transform: scale(1);
+               transform: scale(1);
     }
 }
 
-.slideanim-1, .slideanim-2, .slideanim-3, .slideanim-7, .slideanim-8, .slideanim-9, .slideanim-10, .slideanim-11 {
+.anim-slideInUp, .anim-slideInRight, .anim-rollIn, .anim-rollFade, .anim-rotateX, .anim-rotateY, .anim-zoomIn, .anim-bounceInDown {
     visibility: hidden;
 }
 
-.slide-1, .slide-2, .slide-3, .slide-7, .slide-8, .slide-9, .slide-10, .slide-11 {
+.slideInUp, .slideInRight, .rollIn, .rollFade, .rotateX, .rotateY, .zoomIn, .bounceInDown {
     visibility: visible;
 }
 
-.slide-1 {
-    animation-name: slide-1;
-    -webkit-animation-name: slide-1;
+.slideInUp {
+    animation-name: slideInUp;
+    -webkit-animation-name: slideInUp;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
 }
 
-@keyframes slide-1 {
+@keyframes slideInUp {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
-        transform: translateY(70%);
+                transform: translateY(70%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
-        transform: translateY(0%);
+                transform: translateY(0%);
     }
 }
-@-webkit-keyframes slide-1 {
+@-webkit-keyframes slideInUp {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
@@ -450,223 +477,273 @@ body {
     }
 }
 
-.slide-2 {
-    animation-name: slide-2;
-    -webkit-animation-name: slide-2;
+.slideInRight {
+    animation-name: slideInRight;
+    -webkit-animation-name: slideInRight;
     animation-duration: 1.8s;
     -webkit-animation-duration: 1.8s;
 }
 
-@-webkit-keyframes slide-2 {
+@-webkit-keyframes slideInRight {
     0% {
         opacity: 0;
         -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+                transform: translateX(-100%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
-        transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
-@keyframes slide-2 {
+@keyframes slideInRight {
     0% {
         opacity: 0;
         -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+                transform: translateX(-100%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
-        transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
-.slide-3 {
-    -webkit-animation-name: slide-3;
-    animation-name: slide-3;
+.rollIn {
+    -webkit-animation-name: rollIn;
+            animation-name: rollIn;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-@-webkit-keyframes slide-3 {
+@-webkit-keyframes rollIn {
     0% {
         opacity: 0;
-        -webkit-transform:translate(-200%, -200%) rotate(350deg);
-        transform:translate(-200%, -200%) rotate(350deg);
+        -webkit-transform: translate(-200%, -200%) rotate(350deg);
+                transform: translate(-200%, -200%) rotate(350deg);
     }
     100% {
         opacity: 1;
-        -webkit-transform:translate(0%, 0%) rotate(0deg);
-        transform:translate(0%, 0%) rotate(0deg);
+        -webkit-transform: translate(0%, 0%) rotate(0deg);
+                transform: translate(0%, 0%) rotate(0deg);
     }
 }
 
-@keyframes slide-3 {
+@keyframes rollIn {
     0% {
         opacity: 0;
-        -webkit-transform:translate(-200%, -200%) rotate(350deg);
-        transform:translate(-200%, -200%) rotate(350deg);
+        -webkit-transform: translate(-200%, -200%) rotate(350deg);
+                transform: translate(-200%, -200%) rotate(350deg);
     }
     100% {
         opacity: 1;
-        -webkit-transform:translate(0%, 0%) rotate(0deg);
-        transform:translate(0%, 0%) rotate(0deg);
+        -webkit-transform: translate(0%, 0%) rotate(0deg);
+                transform: translate(0%, 0%) rotate(0deg);
     }
 }
 
-.slide-7 {
-    -webkit-animation-name: slide-7;
-    animation-name: slide-7;
+.rollFade {
+    -webkit-animation-name: rollFade;
+            animation-name: rollFade;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-@-webkit-keyframes slide-7 {
+@-webkit-keyframes rollFade {
     0% {
         opacity: 0;
         -webkit-transform: rotateY(360deg);
-        transform: rotateY(360deg);
+                transform: rotateY(360deg);
     }
     100% {
         opacity: 1;
         -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
+                transform: rotateY(0deg);
     }
 }
 
-@keyframes slide-7 {
+@keyframes rollFade {
     0% {
         opacity: 0;
         -webkit-transform: rotateY(360deg);
-        transform: rotateY(360deg);
+                transform: rotateY(360deg);
     }
     100% {
         opacity: 1;
         -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
+                transform: rotateY(0deg);
     }
 }
 
-.slide-8 {
-    -webkit-animation-name: slide-8;
-    animation-name: slide-8;
+.rotateY {
+    -webkit-animation-name: rotateY;
+            animation-name: rotateY;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-@-webkit-keyframes slide-8 {
+@-webkit-keyframes rotateY {
     0% {
         opacity: 0;
         -webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
+                transform: rotateX(180deg);
     }
     100% {
         opacity: 1;
         -webkit-transform: rotateX(0deg);
-        transform: rotateX(0deg);
+                transform: rotateX(0deg);
     }
 }
 
-@keyframes slide-8 {
+@keyframes rotateY {
     0% {
         opacity: 0;
         -webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
+                transform: rotateX(180deg);
     }
     100% {
         opacity: 1;
         -webkit-transform: rotateX(0deg);
-        transform: rotateX(0deg);
+                transform: rotateX(0deg);
     }
 }
 
-.slide-9 {
-    -webkit-animation-name: slide-9;
-    animation-name: slide-9;
+.rotateX {
+    -webkit-animation-name: rotateX;
+            animation-name: rotateX;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-@-webkit-keyframes slide-9 {
+@-webkit-keyframes rotateX {
     0% {
         opacity: 0;
         -webkit-transform: skew(60deg);
-        transform: skew(60deg);
+                transform: skew(60deg);
         margin: -200px;
     }
     100% {
         opacity: 1;
         -webkit-transform: skew(0deg);
-        transform: skew(0deg);
+                transform: skew(0deg);
     }
 }
 
-@keyframes slide-9 {
+@keyframes rotateX {
     0% {
         opacity: 0;
         -webkit-transform: skew(60deg);
-        transform: skew(60deg);
+                transform: skew(60deg);
         margin: -200px;
     }
     100% {
         opacity: 1;
         -webkit-transform: skew(0deg);
-        transform: skew(0deg);
+                transform: skew(0deg);
     }
 }
 
-.slide-10 {
-    -webkit-animation-name: slide-10;
-    animation-name: slide-10;
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
     -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
     animation-duration: 1s;
-}
-
-@-webkit-keyframes slide-10 {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes slide-10 {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-.slide-11 {
-    -webkit-animation-name: slide-11;
-    animation-name: slide-11;
-    -webkit-animation-duration: 0.7s;
-    animation-duration: 0.7s;
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
-@-webkit-keyframes slide-11 {  
-    0% {-webkit-transform: translateY(170%);transform: translateY(170%);}     
-    70% {-webkit-transform: translateY(0%);transform: translateY(0%);} 
-    80% {-webkit-transform: translateY(-5%);transform: translateY(-5%);} 
-    90% {-webkit-transform: translateY(3%);transform: translateY(3%);}
-    100% {-webkit-transform: translateY(0%);transform: translateY(0%);} 
-}
-
-@keyframes slide-11 {  
-    0% {-webkit-transform: translateY(170%);transform: translateY(170%);}     
-    70% {-webkit-transform: translateY(0%);transform: translateY(0%);} 
-    80% {-webkit-transform: translateY(-5%);transform: translateY(-5%);} 
-    90% {-webkit-transform: translateY(3%);transform: translateY(3%);}
-    100% {-webkit-transform: translateY(0%);transform: translateY(0%);} 
+    -webkit-animation-duration: 1s;
 }
